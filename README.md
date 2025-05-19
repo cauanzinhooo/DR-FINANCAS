@@ -1,4 +1,4 @@
-# �� DR Finanças - Teste ��
+# DR Finanças - Teste 
 
 ## ⚠️ Requisitos
 
@@ -70,6 +70,14 @@ npm run test:e2e
 
 ## �� Fluxo da Emissão de Nota Fiscal
 
-A imagem abaixo representa o fluxo completo da emissão de uma Nota Fiscal:
+Considere o seguinte cenário: Você tem uma aplicação frontend para seus clientes.
+Nesta aplicação, você precisa implementar uma funcionalidade em que o usuário
+realizará alguma ação que levará tempo para ser concluída. A aplicação deve sempre
+mostrar o último status do processamento.
+No backend, essa ação do usuário irá disparar uma sequência de ações assíncronas
+independentes entre si com tempos de conclusão diferentes.
+Desenhe um diagrama de arquitetura para essa solução. Não é necessário codificar
+nenhum dos componentes.
+
 ![3](https://github.com/user-attachments/assets/c2ec5965-4769-4b60-b1ac-62d8da3ee239)
 
