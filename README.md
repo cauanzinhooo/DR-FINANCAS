@@ -46,6 +46,10 @@ docker compose up -d
 Execute o comando para aplicar as migrations no banco de teste:
 
 ```bash
+npm i
+```
+
+```bash
 npm run migrate:test
 ```
 
