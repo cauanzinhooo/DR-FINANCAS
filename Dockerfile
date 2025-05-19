@@ -10,9 +10,7 @@ COPY . .
 
 RUN npx prisma generate
 
-
 RUN rm -rf test
-
 
 RUN npx tsc
 
