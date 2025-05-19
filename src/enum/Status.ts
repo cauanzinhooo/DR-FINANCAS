@@ -1,0 +1,5 @@
+export enum StatusNf {
+  PENDENTE_EMISSAO = "PENDENTE_EMISSAO",
+  EMITIDA = "EMITIDA",
+  CANCELADA = "CANCELADA",
+}

@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model NotaFiscal {
+  id          String    @id @default(uuid())
+  cnpj        String
+  municipio   String
+  estado      String
+  valor       Float
+  descricao   String
+  status      Status    @default(PENDENTE_EMISSAO)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  numeroNF    String?
+  dataEmissao DateTime?
+}
+
+enum Status {
+  PENDENTE_EMISSAO
+  EMITIDA
+  CANCELADA
+}
